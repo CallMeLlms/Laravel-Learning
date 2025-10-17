@@ -12,7 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         //
-
         Schema::create('users_table', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
