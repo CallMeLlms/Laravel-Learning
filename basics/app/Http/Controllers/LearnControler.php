@@ -8,8 +8,7 @@ class LearnControler extends Controller
 {
     public function store(Request $request) {
         
-        
-
+    
         return redirect()->action('${App\Http\Controllers\HomeController@index}', ['parameterKey' => 'value']);
     }
     
