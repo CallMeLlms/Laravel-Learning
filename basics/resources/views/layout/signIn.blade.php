@@ -7,7 +7,7 @@
 <body class="bg-gray-100 flex items-center justify-center h-screen">
     <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
         <h2 class="text-2xl font-bold mb-6 text-center">Sign In</h2>
-        <form action={{ url('/LearnController')}} method="POST">
+        <form action="{{ url('/layout') }}" method="POST">
             @csrf
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
