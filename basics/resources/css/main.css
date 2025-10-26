@@ -25,5 +25,9 @@
 
 .h1-reusable {
     font-size: 4rem;
+}
 
+.m-input-container {
+    display: flex;
+    flex-direction: column;
 }

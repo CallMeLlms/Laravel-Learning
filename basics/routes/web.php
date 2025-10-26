@@ -6,8 +6,8 @@ Route::get('/layout', function () {
     return view('layout.main');
 });
 
-Route::get('/form', function () {
-    return view('component.form');
+Route::get('/layout', function () {
+    return view('layout.form');
 });
 
 
