@@ -14,7 +14,6 @@
 }
 
 .m-form-container {
-    
     max-height: 300px;
     max-width: 300px;
     background-color: rgb(217,217,217);
@@ -31,4 +30,8 @@
 .m-input-container {
     display: flex;
     flex-direction: column;
+}
+
+.m-resuable-label {
+    font-size: 22px;
 }
