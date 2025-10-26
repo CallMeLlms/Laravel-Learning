@@ -7,7 +7,9 @@
 </head>
 <body>
 
+    <div>
+        @yield('form-content')
+    </div>
 
-    
 </body>
 </html>
