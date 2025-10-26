@@ -14,8 +14,9 @@
 }
 
 .m-form-container {
-    width: 40vw;
-    height: 30vh;
+    
+    max-height: 300px;
+    max-width: 300px;
     background-color: rgb(217,217,217);
     border-radius: 10px;
     padding: 20px;
