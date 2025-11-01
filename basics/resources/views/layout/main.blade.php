@@ -13,6 +13,8 @@
             @yield('form-content')
             <!-- <p>lorem5</p> -->
         </div>
+
+        <x-Footer/>
     </main>
 
 </body>

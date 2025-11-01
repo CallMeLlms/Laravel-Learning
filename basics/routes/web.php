@@ -8,13 +8,12 @@ use Illuminate\Support\Facades\Route;
     -- im i retarded?
 */
 
-
 Route::get('/layout', function () {
     return view('layout.main');
 });
 
 Route::get('/layout', function () {
-    return view('test.form');
+    return view('partials.form');
 });
 
 
