@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    font-family: "Roboto Mono", monospace;
+}
+
+.m-parent {
+    display: inline-block;
+}
 
 .m-container {
     height: 100vh;
@@ -14,17 +22,23 @@
 }
 
 .m-form-container {
-    max-height: 300px;
-    max-width: 300px;
     background-color: rgb(217,217,217);
     border-radius: 10px;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
+
 
 .h1-reusable {
     font-size: 4rem;
+}
+
+.m-input-main-container {
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .m-input-container {
@@ -32,6 +46,59 @@
     flex-direction: column;
 }
 
+
+.m-form-create-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 12px 0px 0px 0px;
+}
+
+
 .m-resuable-label {
     font-size: 22px;
+}
+
+.m-input {
+    padding: 2%;
+    border-radius: 4px 4px 4px 4px;
+    border-style: none;
+    outline: none;
+}
+
+.m-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.m-btn-container .m-btn {
+    outline: none;
+    padding: 2%;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.m-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) {
+    .m-form-container {
+        height: auto;  
+        width: 400px;   
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .m-form-container {
+        height: auto;  
+        width: 500px;   
+    }
 }

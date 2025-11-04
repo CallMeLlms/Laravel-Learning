@@ -13,7 +13,7 @@ Route::get('/layout', function () {
 });
 
 Route::get('/layout', function () {
-    return view('partials.form');
+    return view('partials.signIn_account');
 });
 
 

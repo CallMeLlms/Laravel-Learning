@@ -8,11 +8,15 @@
 </head>
 <body>
     
-    <main>
+    <main class="m-parent">
         <div class="m-container">
             @yield('form-content')
             <!-- <p>lorem5</p> -->
         </div>
+
+        {{-- <div class="">
+            <p>footer burat</p>
+        </div> --}}
 
         <x-Footer/>
     </main>
