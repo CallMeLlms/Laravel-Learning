@@ -5,7 +5,7 @@
         <div class="m-form-container">
             <div class="m-form-container-items">
                 @csrf
-                <h1 class="h1-reusable">Sign In</h1>
+                <h1 class="h1-reusable">Sign Up</h1>
                 <div class="m-input-main-container">
                     <div class="m-input-container">
                         <label class="m-resuable-label">Username</label>
@@ -23,7 +23,7 @@
                 </div>
                 
                 <div class="m-form-create-container">
-                    <a href="{{ route('signUp') }}">Create account</a>
+                    <a href="{{ route('signIn') }}">Create account</a>
                 </div>
             </div>
         </div>

@@ -8,6 +8,15 @@
     font-family: "Roboto Mono", monospace;
 }
 
+.index {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .m-parent {
     display: inline-block;
 }
@@ -18,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(67,67,67);
+    background-color: rgb(187, 187, 187);
 }
 
 .m-form-container {
