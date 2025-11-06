@@ -13,8 +13,18 @@
                     </div>
 
                     <div class="m-input-container">
+                        <label class="m-resuable-label">Email</label>
+                        <input class="m-input" name="username" type="email"/>
+                    </div>
+
+                    <div class="m-input-container">
                         <label class="m-resuable-label">Password</label>
-                        <input class="m-input" type="password" name="password"/>
+                        <input class="m-input" type="password" name="password" type="password"/>
+                    </div>
+
+                    <div class="m-input-container">
+                        <label class="m-resuable-label">Confirm Password</label>
+                        <input class="m-input" name="username" type="password"/>
                     </div>
                 </div>
                 
@@ -23,7 +33,7 @@
                 </div>
                 
                 <div class="m-form-create-container">
-                    <a href="{{ route('signIn') }}">Create account</a>
+                    <a href="{{ route('signIn') }}">Back to login</a>
                 </div>
             </div>
         </div>
