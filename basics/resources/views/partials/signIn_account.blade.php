@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('form-content')
-    <form action="/login" method="POST">
+    <form action="{{ route('signIn.post') }}" method="POST">
         <div class="m-form-container">
             <div class="m-form-container-items">
                 @csrf
@@ -9,7 +9,7 @@
                 <div class="m-input-main-container">
                     <div class="m-input-container">
                         <label class="m-resuable-label">Username</label>
-                        <input class="m-input" type="text" name="username"/>
+                        <input class="m-input" type="text" name="name"/>
                     </div>
 
                     <div class="m-input-container">

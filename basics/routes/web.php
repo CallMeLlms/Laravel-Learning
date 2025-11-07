@@ -13,9 +13,15 @@ use App\Http\Controllers\AuthController;
 // layout shit
 Route::get('/layout', [PageController::class, 'main'])->name('main');
 
+// --Home Route
+Route::get('/home', [PageController::class, 'home'])->name('home');
+
 // Auth shit
 Route::get('/signIn', [AuthController::class, 'signInView'])->name('signIn');
+Route::post('/signIn', [AuthController::class, 'signIn'])->name('signIn.post');
+
 Route::get('/signUp', [AuthController::class, 'signUpView'])->name('signUp');
+Route::post('/signUp', [AuthController::class, 'signUp'])->name('signUp.post');
 
 
 Route::get('/', function () {

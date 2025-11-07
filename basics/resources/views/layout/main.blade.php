@@ -12,6 +12,8 @@
         <div class="m-container">
             @yield('form-content')
             <!-- <p>lorem5</p> -->
+
+            @yield('main-content')
         </div>
 
         {{-- <div class="">

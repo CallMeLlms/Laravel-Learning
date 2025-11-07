@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('form-content')
-    <form action="/login" method="POST">
+    <form action="{{ route('signUp.post') }}" method="POST">
         <div class="m-form-container">
             <div class="m-form-container-items">
                 @csrf
@@ -9,27 +9,27 @@
                 <div class="m-input-main-container">
                     <div class="m-input-container">
                         <label class="m-resuable-label">Username</label>
-                        <input class="m-input" type="text" name="username"/>
+                        <input class="m-input" type="text" name="name" value="{{ old('name') }}"/>
                     </div>
 
                     <div class="m-input-container">
                         <label class="m-resuable-label">Email</label>
-                        <input class="m-input" name="username" type="email"/>
+                        <input class="m-input" name="email" type="email"  value="{{ old('email') }}"/>
                     </div>
 
                     <div class="m-input-container">
                         <label class="m-resuable-label">Password</label>
-                        <input class="m-input" type="password" name="password" type="password"/>
+                        <input class="m-input" name="password"  type="password"/>
                     </div>
 
                     <div class="m-input-container">
                         <label class="m-resuable-label">Confirm Password</label>
-                        <input class="m-input" name="username" type="password"/>
+                        <input class="m-input" name="password_confirmation" type="password"/>
                     </div>
                 </div>
                 
                 <div class="m-btn-container">
-                    <button class="m-btn" type="submit">Login</button>
+                    <button class="m-btn" type="submit">Register</button>
                 </div>
                 
                 <div class="m-form-create-container">

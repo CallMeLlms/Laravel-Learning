@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'custom' => [
+            'driver' => 'session',
+            'provider' => 'lara_learning',
+        ],
     ],
 
     /*
@@ -62,8 +67,13 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\User::class),
+            'model' => App\Models\User::class,
         ],
+
+        'lara_learning' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\User_model::class,
+        ]
 
         // 'users' => [
         //     'driver' => 'database',
