@@ -14,4 +14,8 @@ class PageController extends Controller
     public function home() {
         return view('partials.home_content');   
     }
+
+    public function admin() {
+        return view('partials.admin_content');   
+    }
 }

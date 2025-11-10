@@ -7,6 +7,8 @@ use App\Models\User_model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
+use function Laravel\Prompts\error;
+
 class AuthController extends Controller
 {
     
@@ -24,7 +26,7 @@ class AuthController extends Controller
         ]);
 
         // i relly don't know 
-         if (Auth::guard('custom')->attempt($credentials)) {
+        if (Auth::guard('custom')->attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended(route('home'));
         }

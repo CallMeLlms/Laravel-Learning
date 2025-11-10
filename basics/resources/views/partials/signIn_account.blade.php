@@ -21,6 +21,12 @@
                 <div class="m-btn-container">
                     <button class="m-btn" type="submit">Login</button>
                 </div>
+
+                @foreach (['name', 'email', 'password'] as $fields) 
+                    @error($fields)
+                        <div><p>{{ $message }}</p></div>
+                    @enderror
+                @endforeach
                 
                 <div class="m-form-create-container">
                     <a href="{{ route('signUp') }}">Create account</a>

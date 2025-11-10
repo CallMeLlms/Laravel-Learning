@@ -16,6 +16,10 @@ Route::get('/layout', [PageController::class, 'main'])->name('main');
 // --Home Route
 Route::get('/home', [PageController::class, 'home'])->name('home');
 
+// Admin Route
+Route::get('/admin', [PageController::class, 'admin'])->name('admin');
+
+
 // Auth shit
 Route::get('/signIn', [AuthController::class, 'signInView'])->name('signIn');
 Route::post('/signIn', [AuthController::class, 'signIn'])->name('signIn.post');
